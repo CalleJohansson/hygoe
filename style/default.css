@@ -1,0 +1,150 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #151c21;
+  color: #fff
+
+}
+
+*:not(i) {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  height: 90px;
+}
+
+.header .brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 0 50px;
+}
+
+.header .brand .logo img {
+  height: 90px;
+}
+
+.header .brand .name {
+  font-size: 35px;
+  font-weight: 100;
+  color: #fff;
+  margin: 0 0 0 10px;
+}
+
+.navigation {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.navigation ul {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.navigation li {
+  justify-content: center;
+  height: 100%;
+  display: flex;
+}
+
+.navigation a {
+  padding: 35px 30px 0px;
+  display: block;
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.navigation a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slideshow > div {
+    position: absolute;
+}
+
+#slideshow > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.about h2 {
+  font-size: 40px;
+}
+
+.about .player {
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.about .player h3 {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  background: #000;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.about .player:hover .content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.about .player .content {
+  width: 100%;
+  height: 100%;
+  padding: 100px 20px 20px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+.about .knight {
+  background: url('../images/players/knight.jpg') 100% / cover;
+}
+
+.about .rozzo {
+  background: url('../images/players/rozzo.jpg') 100% / cover;
+}
+
+.about .bempan {
+  background: url('../images/players/bempan.jpg') 100% / cover;
+}
+
+.about .shaun {
+  background: url('../images/players/shaun.jpg') 100% / cover;
+}
+
+.about .antonk {
+  background: url('../images/players/antonk.jpg') 100% / cover;
+}
